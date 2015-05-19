@@ -1,0 +1,31 @@
+﻿.div {
+    border: 1px solid black;
+    margin: 20px;
+}
+
+#txtAddress {
+    min-height: 36px;
+    max-height: 150px;
+}
+
+
+#float-right {
+    text-align: right;
+    margin-right: 11%;
+    margin-bottom: 10px;
+}
+
+
+.add-request {
+    margin-left: 17%;
+}
+
+.margin-left-20 {
+    margin-left: 5%;
+    text-decoration: underline;
+    margin-bottom: 3%;
+}
+
+.submitButton {
+    margin-bottom: 10px;
+}

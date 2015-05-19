@@ -1,0 +1,22 @@
+﻿<div class="div">
+    <h3 class="margin-left-20">Vehicle Service management</h3>
+    <div class="table-responsive">
+        <table class="table">
+            <tr>
+                <th>Customer Full Name</th>
+                <th>Vehicle Registration Number</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr ng-repeat=" request in requestList">
+                <td>{{request.firstname}} {{request.lastname}}</td>
+                <td>{{request.vehiclenumber}}</td>
+                <td><button class="btn btn-default" ng-click="ViewDetails($index)">View</button> </td>
+                <td><button class="btn btn-default" ng-click="DeleteRequest($index)">Delete</button> </td>
+            </tr>
+        </table>
+    </div>
+    <div id="float-right">
+        <button class="btn btn-default" ng-click="AddNewRequest()">Add New Request</button>
+    </div>
+</div>

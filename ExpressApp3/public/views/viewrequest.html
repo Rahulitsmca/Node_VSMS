@@ -1,0 +1,52 @@
+﻿<div class="div">
+    <h3 class="margin-left-20">Vehicle View Service</h3>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="txtFirstName" class="col-sm-2 control-label">First Name:</label>
+            <div class="col-sm-4">
+                <p class="form-control-static">{{RequestDetail.firstname}}</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="txtLastName" class="col-sm-2 control-label">Last Name:</label>
+            <div class="col-sm-4">
+                <p class="form-control-static">{{RequestDetail.lastname}}</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="txtvno" class="col-sm-2 control-label">Vehicle registration no:</label>
+            <div class="col-sm-4">
+                <p class="form-control-static">{{RequestDetail.vehiclenumber}}</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="vno" class="col-sm-2 control-label">Mobile number:</label>
+            <div class="col-sm-4">
+                <p class="form-control-static">{{RequestDetail.mobilenumber}}</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="address" class="col-sm-2 control-label">Address:</label>
+            <div class="col-sm-4">
+                <p class="form-control-static">{{RequestDetail.address}}</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="pickDate" class="col-sm-2 control-label">Pickup Date:</label>
+            <div class="col-sm-4">
+                <p class="form-control-static">{{RequestDetail.pickupdate| date:'MM/dd/yyyy'}}</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="returnDate" class="col-sm-2 control-label">Return Date:</label>
+            <div class="col-sm-4">
+                <p class="form-control-static">{{RequestDetail.returndate| date:'MM/dd/yyyy'}}</p>
+            </div>
+        </div>
+        <div class="submitButton">
+            <button type="button" class="btn btn-default add-request" ng-click="BackToHome()">Back to home screen</button>
+        </div>
+    </form>
+</div>

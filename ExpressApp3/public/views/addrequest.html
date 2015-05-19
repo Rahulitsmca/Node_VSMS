@@ -1,0 +1,52 @@
+﻿<div class="div">
+    <h3 class="margin-left-20">     Vehicle Service Request From </h3>
+    <form class="form-horizontal" ng-submit="AddRequest()">
+        <div class="form-group">
+            <label for="txtFirstName" class="col-sm-2 control-label">First Name:</label>
+            <div class="col-sm-4">
+                <input type="text" required class="form-control" ng-model="formData.firstname" id="txtFirstName" placeholder="Enter First Name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="txtLastName" class="col-sm-2 control-label">Last Name:</label>
+            <div class="col-sm-4">
+                <input type="text" required class="form-control" ng-model="formData.lastname" id="txtLastName" placeholder="Enter Last Name">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="txtvno" class="col-sm-2 control-label">Vehicle registration no:</label>
+            <div class="col-sm-4">
+                <input type="text" required class="form-control" ng-model="formData.vehiclenumber" id="txtvno" placeholder="Enter Vehicle registration">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="txtMobile" class="col-sm-2 control-label">Mobile number:</label>
+            <div class="col-sm-4">
+                <input type="tel" class="form-control" ng-model="formData.mobilenumber" id="txtMobile" placeholder="Enter Mobile no.">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="txtAddress" class="col-sm-2 control-label">Address:</label>
+            <div class="col-sm-4">
+                <textarea class="form-control textarea" ng-model="formData.address" rows="3" id="txtAddress" placeholder="Address"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="pickDate" class="col-sm-2 control-label">Pickup Date:</label>
+            <div class="col-sm-4">
+                <input type="date" class="form-control" ng-model="formData.pickupdate" id="pickDate" placeholder="Enter Pickup Date">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="returnDate" class="col-sm-2 control-label">Return Date:</label>
+            <div class="col-sm-4">
+                <input type="date" class="form-control" ng-model="formData.returndate" id="returnDate" placeholder="Enter Retrun Date">
+            </div>
+        </div>
+        <div class="submitButton">
+            <button type="submit" class="btn btn-default add-request">Submit Request</button>
+        </div>
+    </form>
+</div>
